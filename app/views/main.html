@@ -1,0 +1,38 @@
+
+<div ng-include src ="'views/form.html'"></div>
+
+
+
+
+<div ng-controller="home">
+<p></p>
+<div class =class="table-responsive">
+  <table class="table table-hover">
+    <tr>
+      <th>ID</th>
+      <th>Taille</th>
+      <th>Nbre_Piece</th>
+
+      <th></th>
+      <th></th>
+
+    </tr>
+    <tr  ng-repeat="home in Homes">
+      <td>
+        <span>{{home.id}}</span></td>
+      <td>
+        <span>{{home.taille}}</span></td>
+      <td>
+        <span>{{home.nbrpiece}}</span></td>
+
+
+      <td>
+        <button class="btn btn-warning"   title="Edit"><span class="glyphicon glyphicon-edit"></span></button>
+      </td>
+      <td>
+        <button class="btn btn-danger" ng-click="deleteHome(home)" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
