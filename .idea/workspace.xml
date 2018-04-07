@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9fb4c0d-3cf2-4ff7-bcba-90e6fd1bd637" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/person.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/device.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/heater.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/home.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/person.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/person.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change beforePath="$PROJECT_DIR$/app/scripts/controllers/about.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/scripts/controllers/home.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/home.js" />
-      <change beforePath="$PROJECT_DIR$/app/views/about.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/scripts/controllers/person.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/person.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -79,14 +67,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="person.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="person.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/person.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -300,12 +286,20 @@
       <workItem from="1522861748377" duration="160000" />
       <workItem from="1522871683526" duration="10134000" />
       <workItem from="1522908101185" duration="31947000" />
-      <workItem from="1523036570558" duration="3889000" />
+      <workItem from="1523036570558" duration="4266000" />
     </task>
+    <task id="LOCAL-00001" summary="configuration proxy gestion routes et creation d'ne premiere pahe pour l'ajout la suppression et le listag d'une home">
+      <created>1523079572781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523079572781</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66799000" />
+    <option name="totallyTimeSpent" value="67176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="63" width="1382" height="673" extended-state="6" />
@@ -336,6 +330,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="configuration proxy gestion routes et creation d'ne premiere pahe pour l'ajout la suppression et le listag d'une home" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuration proxy gestion routes et creation d'ne premiere pahe pour l'ajout la suppression et le listag d'une home" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
@@ -347,9 +345,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -600,20 +596,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/person.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/person.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
