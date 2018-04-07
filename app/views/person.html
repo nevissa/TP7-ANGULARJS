@@ -14,14 +14,11 @@
   </div>
   <p></p>
 
-  <label>EMAIL:</label>
-  <input type="text" name="emp_name" class="form-control" placeholder="Enter person email" ng-model="person.email"
-         autofocus required/>
-  </div>
-  <p></p>
-  <label>Age:</label>
-  <input type="text" name="emp_name" class="form-control" placeholder="Enter person age" ng-model="person.age" autofocus
-         required/>
+  <div class="form-group">
+    <label>Age:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter person age" ng-model="person.age"
+           autofocus
+           required/>
   </div>
   <p></p>
 
@@ -38,7 +35,6 @@
       <th>Nom</th>
       <th>Prenom</th>
       <th>Age</th>
-      <th>Email</th>
       <th>Edit</th>
       <th>Delete</th>
 
@@ -52,9 +48,6 @@
         <span>{{person.firstname}}</span></td>
       <td>
         <span>{{person.age}}</span></td>
-      <td>
-        <span>{{person.email}}</span></td>
-
       <td>
         <button class="btn btn-warning" ng-click="editPerson(person.id)" title="Edit"><span
           class="glyphicon glyphicon-edit"></span></button>
