@@ -1,0 +1,52 @@
+
+
+<form class=" alert alert-warning" name="empList" id="empForm" id="">
+  <h3 class="text-center">Insert Home  Into Database</h3>
+
+  <div class="form-group">
+    <label >Home Taille:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter Home taille" ng-model= "home.taille" autofocus required />
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label >Home Nombre_Piece:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter Home nbr_piece" ng-model= "home.nbrpiece" autofocus required />
+  </div>
+  <p></p>
+
+  <div class="form-group">
+    <button class="btn btn-warning" ng-click="createHome()"  ng-disabled="$isEmpty()" >Add Into Database</button>
+  </div>
+</form>
+
+
+<div class =class="table-responsive">
+  <table class="table table-hover">
+    <tr>
+      <th>ID</th>
+      <th>Taille</th>
+      <th>Nbre_Piece</th>
+
+      <th>Edit</th>
+      <th>Delete</th>
+
+    </tr>
+    <tr  ng-repeat="home in Homes">
+      <td>
+        <span>{{home.id}}</span></td>
+      <td>
+        <span>{{home.taille}}</span></td>
+      <td>
+        <span>{{home.nbrpiece}}</span></td>
+
+
+      <td>
+        <button class="btn btn-warning"  ng-click= "editHome(home.id)" title="Edit"><span class="glyphicon glyphicon-edit"></span></button>
+      </td>
+      <td>
+        <button class="btn btn-danger" ng-click="deleteHome(home.id)" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>
+      </td>
+    </tr>
+  </table>
+</div>
+

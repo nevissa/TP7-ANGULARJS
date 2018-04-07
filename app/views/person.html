@@ -1,0 +1,65 @@
+<!-----------------
+
+<form class=" alert alert-warning" name="empList" id="empForm" id="">
+  <h3 class="text-center">Insert Person  Into Database</h3>
+
+  <div class="form-group">
+    <label >Nom:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter person name" ng-model= "person.name" autofocus required />
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label >First Name:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter person first name" ng-model= "person.firstname" autofocus required />
+  </div>
+  <p></p>
+
+  <label >EMAIL:</label>
+  <input type="text" name="emp_name" class="form-control" placeholder="Enter person email" ng-model= "person.email" autofocus required />
+  </div>
+  <p></p>
+  <label >Age:</label>
+  <input type="text" name="emp_name" class="form-control" placeholder="Enter person age" ng-model= "person.age" autofocus required />
+  </div>
+  <p></p>
+
+  <div class="form-group">
+    <button class="btn btn-warning" ng-click="createPerson()"  ng-disabled="$isEmpty()" >Add Person Into Database</button>
+  </div>
+</form>
+
+
+<div class =class="table-responsive">
+  <table class="table table-hover">
+    <tr>
+      <th>Nom</th>
+      <th>First_Name</th>
+      <th>Email</th>
+      <th>Age</th>
+
+      <th>Edit</th>
+      <th>Delete</th>
+
+    </tr>
+    <tr  ng-repeat="person in Person">
+      <td>
+        <span>{{person.name}}</span></td>
+      <td>
+        <span>{{person.firstname}}</span></td>
+      <td>
+        <span>{{person.email}}</span></td>
+      <td>
+        <span>{{person.age}}</span></td>
+
+
+      <td>
+        <button class="btn btn-warning"  ng-click= "editHome(person.id)" title="Edit"><span class="glyphicon glyphicon-edit"></span></button>
+      </td>
+      <td>
+        <button class="btn btn-danger" ng-click="deleteHome(person.id)" title="Delete"><span class="glyphicon glyphicon-trash"></span></button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+*/

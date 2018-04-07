@@ -20,18 +20,26 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/home.html',
         controller: 'home',
         controllerAs: 'home'
 
       })
+
+      .when('/person', {
+        templateUrl: 'views/person.html',
+        controller: 'PersonCtrl',
+        controllerAs: 'person'
+      })
       .otherwise({
         redirectTo: '/'
       })
-  });
+  })
+      // route for the contact page
 
 
 
 
+  ;
 
 
