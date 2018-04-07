@@ -81,7 +81,7 @@ module.exports = function (grunt) {
 //TODCHANGE
         context: '/rest', // the context of the data service
         host: 'localhost', // wherever the data service is running
-        port: 8080 // the port that the data service is running on
+        port: 8005 // the port that the data service is running on
       }],
       livereload: {
         options: {

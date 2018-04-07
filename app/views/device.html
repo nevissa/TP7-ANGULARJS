@@ -1,5 +1,57 @@
-<div class="jumbotron text-center">
-  <h1>Home Page</h1>
+<form class=" alert alert-warning" name="empList" id="empForm" id="">
+  <h3 class="text-center">Devices Page</h3>
 
-  <p>{{ message }}</p>
+  <div class="form-group">
+    <label>ElectroDevice Name:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter le nom de l'electrodevice"
+           ng-model="device.name" autofocus required/>
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label>ElectroDevice Puissance:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter La Puissance" ng-model="device.puissance"
+           autofocus required/>
+  </div>
+  <p></p>
+
+  <div class="form-group">
+    <label>ElectroDevice Type:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter le type" ng-model="device.type" autofocus
+           required/>
+  </div>
+  <p></p>
+
+  <div class="form-group">
+    <button class="btn btn-warning" ng-click="createDevice()" ng-disabled="$isEmpty()">Add Into Database</button>
+  </div>
+</form>
+
+
+<div class=class="table-responsive">
+  <table class="table table-hover">
+    <tr>
+      <th>ID</th>
+      <th>NOM</th>
+      <th>Puissance</th>
+      <th>Type</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+
+    <tr ng-repeat="device in devices">
+      <td><span>{{device.id}}</span></td>
+      <td><span>{{device.name}}</span></td>
+      <td><span>{{device.puissance}}</span></td>
+      <td><span>{{device.type}}</span></td>
+      <td>
+        <button class="btn btn-warning" ng-click="editDevice(device.id)" title="Edit"><span
+          class="glyphicon glyphicon-edit"></span></button>
+      </td>
+      <td>
+        <button class="btn btn-danger" ng-click="deleteDevice(device.id)" title="Delete"><span
+          class="glyphicon glyphicon-trash"></span></button>
+      </td>
+    </tr>
+  </table>
 </div>
+

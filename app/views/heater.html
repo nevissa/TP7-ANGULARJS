@@ -1,5 +1,58 @@
-<div class="jumbotron text-center">
-  <h1>Home Page</h1>
+<form class=" alert alert-warning" name="empList" id="empForm" id="">
+  <h3 class="text-center">Heater Page</h3>
 
-  <p>{{ message }}</p>
+  <div class="form-group">
+    <label>Heater Name:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter le nom de l'electrodevice"
+           ng-model="heater.name" autofocus required/>
+  </div>
+  <p></p>
+  <div class="form-group">
+    <label>Heater Puissance:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter La Puissance" ng-model="heater.puissance"
+           autofocus required/>
+  </div>
+  <p></p>
+
+  <div class="form-group">
+    <label>Heater Volume:</label>
+    <input type="text" name="emp_name" class="form-control" placeholder="Enter le type" ng-model="heater.volume"
+           autofocus
+           required/>
+  </div>
+  <p></p>
+
+  <div class="form-group">
+    <button class="btn btn-warning" ng-click="createHeater()" ng-disabled="$isEmpty()">Add Into Database</button>
+  </div>
+</form>
+
+
+<div class=class="table-responsive">
+  <table class="table table-hover">
+    <tr>
+      <th>ID</th>
+      <th>NOM</th>
+      <th>Puissance</th>
+      <th>Volume</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+
+    <tr ng-repeat="heater in heaters">
+      <td><span>{{heater.id}}</span></td>
+      <td><span>{{heater.name}}</span></td>
+      <td><span>{{heater.puissance}}</span></td>
+      <td><span>{{heater.volume}}</span></td>
+      <td>
+        <button class="btn btn-warning" ng-click="editHeater(heater.id)" title="Edit"><span
+          class="glyphicon glyphicon-edit"></span></button>
+      </td>
+      <td>
+        <button class="btn btn-danger" ng-click="deleteHeater(heater.id)" title="Delete"><span
+          class="glyphicon glyphicon-trash"></span></button>
+      </td>
+    </tr>
+  </table>
 </div>
+
